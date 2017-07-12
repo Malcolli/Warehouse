@@ -1,0 +1,487 @@
+/*
+    Document   : app_style.css
+    Author     : Louie Zhu
+    Description: External style sheet for the application.
+*/
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    
+}
+
+body{
+    background: #ffffff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+/*reset padding for p and hx tags*/
+p {
+    padding: 0 0 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0 0 0.4em;
+}
+
+hr {
+    margin-bottom: 3px;
+    background-color: #bbb;
+    color: #bbb;
+    height: 1px;
+    border: 0px;
+    clear: both;
+}
+
+#top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    margin: 0;
+    padding: 0;
+    background-color: #7D110C;
+    width: 100%;
+    height: 125px;
+}
+
+#wrapper {
+    height: auto;
+    margin: 0 auto -4em;
+    text-align: left; 
+    width: 100%; 
+}
+
+
+/*styles for the page footer */
+#footer{
+    font-size: 80%;    
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    text-align: center;
+    background-color: #44697D;
+    opacity: .90;
+    color:#FFFFFF;
+}
+
+
+/*sytle for the banner */
+#banner {
+    
+    background-color: #E1D8B7;
+    height: 215px;
+    width: 325px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+
+/*styles for the page header that appears right below the banner*/
+#main-header {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    font-size: 35px;
+    color: #44697D;
+    display: inline-block;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+/*styles for the record numbers that appear to the right of the page header*/
+span.rcd-numbers {
+    color: #999;
+    font-size: 0.55em;
+    display: inline-block;
+    margin-top: 18px;
+    margin-left: 3px;
+}
+
+/* styles for grid */
+.grid-container{
+    //margin-left: 75px;
+    width: 100%; 
+    background-color: #FFFFFF;
+   
+}
+
+.row:before, 
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
+
+.col {
+    float: left; 
+    min-height: 1px; 
+    padding: 16px; 
+    background-color: #FFFFFF;
+    border: 1px dotted #FFFFFF;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.col:hover {
+    border: 1px solid #7D110C;
+    margin: auto;
+}
+
+.col > p {
+    background-color: #E1D8B7; 
+    padding: 0;
+    margin: 0;
+    text-align: left; 
+    color: #7D110C;
+    width: 167px;
+    height: 215px;
+    border-radius: 12px;
+}
+
+.col > p img {
+    width: 167px;
+    height: 121px;
+ 
+}
+
+.col > p a {
+    text-decoration: none;
+}
+
+.col >p span {
+    margin-top: 2px;
+    display: inline-block;
+    padding-left: 3px;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-ser;
+    color: #7D110C;
+    
+}
+
+table#detail {
+    width: 100%;
+    border-collapse: collapse;
+    //border-bottom: solid 1px #bbb;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
+
+#detail img {
+    width: 333px;
+}
+
+#detail td {
+    position: relative;
+    vertical-align: top;
+    padding: 2px 12px 15px 0px;
+}
+
+#detail p {
+    padding: 3px;
+}
+
+#detail #button-group {
+    position: absolute;
+    bottom: 20px;
+    font-size: 1.00em;
+}
+
+#detail #confirm-message {
+    position: absolute;
+    bottom: 20px;
+    color: red;
+}
+
+#detail .media-description {
+    max-height: 120px;
+    overflow: auto;
+}
+
+/* style for the search bar */
+#searchbar {
+    float: right;
+    margin-top: -32px;
+    margin-right: 50px;
+    position: relative;
+    padding: 9px;
+    border: #7D110C 2px solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+#searchbar input{
+    border: none;
+    //border-radius: 15px;
+}
+
+#searchbar input[type="text"] {
+    width: 275px;
+    height: auto;
+    padding-left: 5px;
+    font-size: 1.20em;
+    color: #444;
+    
+}
+
+#searchbar input[type="text"]:focus {
+    outline: #ccff00;
+}
+
+#searchbar input[type="submit"]{
+    border: none;
+    padding: 8px;
+    width: 100px;
+    height: 36px;
+    text-align: center;
+    background-color: #7D110C;
+    border-radius: 9px;
+    color:#fff;
+    font-size: .80em;
+}
+
+#searchbar input[type="submit"]:hover{
+    border-color: #7D110C;
+    border: solid 1px;
+    background-color: #eee;
+    color:#7D110C;
+}
+
+/* styles for the suggestion div block and the spans in it*/
+#suggestionDiv {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    right: 0px;
+    background-color: #fff;
+    font-size: 1.20em;
+    z-index: 9999;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid rgba(0,0,0,.15);
+    box-shadow: 2px 10px 12px 2px rgba(0,0,0,.175);
+}
+
+#suggestionDiv span {
+    display: block;
+    padding: 4px 3px 4px 10px;
+    cursor: default;
+    min-width: 200px;
+    white-space: nowrap;
+}
+
+#suggestionDiv span:hover {
+    background-color: #F5DEB3;
+}
+
+/* styles for sorting select list */
+.sorting {
+    display: inline-block;
+    float: right;
+}
+
+.sorting select {
+    font-size: 1.20em;
+    color: #666;
+}
+
+/* styles for panigation buttons */
+.pagination {
+    float: right;
+    margin-top: 0px;
+}
+
+.pagination select {
+    color: #666;
+}
+
+.pagination ul {
+    list-style-type: none;
+    margin-top: 0px;
+    padding: 0;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.pagination li {
+    display: inline-block;
+    border: 0px;
+    padding: 0px;
+    margin-left: 5px;
+
+}
+
+.pagination li a {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #999;
+    text-align: center;
+    font-size: 0.7em;
+    padding: 1px;
+    width: 12px;
+    height: 14px;
+    border-radius: 2px;
+}
+
+.pagination li a.active {
+    background-color: #eee;
+}
+
+.pagination li a.enabled {
+    font-weight: bold;
+}
+
+.pagination li a.disabled {
+    pointer-events: none;
+    cursor: default;
+    color: #bbb;
+}
+
+.pagination li a:hover,
+.pagination li a:active,
+.pagination li a:focus
+{
+    text-decoration: none;
+    color: #ff6600;
+    border: 1px solid #ff6600;
+}
+
+//styles for new media form
+.new-media form{
+    /*width: 800px; border: 1px solid #bbb; margin-top: 10px; padding: 10px;*/
+}
+
+.new-media input[type="text"], .new-media textarea{
+    border: 1px solid #bbb;
+    color: #333;
+    border-radius: 2px;
+    font-size: 13px;
+    padding: 2px;
+    margin-top: 8px;
+}
+
+.new-media input:required:invalid, .new-media input:focus:invalid, textarea:required:invalid {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAeVJREFUeNqkU01oE1EQ/mazSTdRmqSxLVSJVKU9RYoHD8WfHr16kh5EFA8eSy6hXrwUPBSKZ6E9V1CU4tGf0DZWDEQrGkhprRDbCvlpavan3ezu+LLSUnADLZnHwHvzmJlvvpkhZkY7IqFNaTuAfPhhP/8Uo87SGSaDsP27hgYM/lUpy6lHdqsAtM+BPfvqKp3ufYKwcgmWCug6oKmrrG3PoaqngWjdd/922hOBs5C/jJA6x7AiUt8VYVUAVQXXShfIqCYRMZO8/N1N+B8H1sOUwivpSUSVCJ2MAjtVwBAIdv+AQkHQqbOgc+fBvorjyQENDcch16/BtkQdAlC4E6jrYHGgGU18Io3gmhzJuwub6/fQJYNi/YBpCifhbDaAPXFvCBVxXbvfbNGFeN8DkjogWAd8DljV3KRutcEAeHMN/HXZ4p9bhncJHCyhNx52R0Kv/XNuQvYBnM+CP7xddXL5KaJw0TMAF8qjnMvegeK/SLHubhpKDKIrJDlvXoMX3y9xcSMZyBQ+tpyk5hzsa2Ns7LGdfWdbL6fZvHn92d7dgROH/730YBLtiZmEdGPkFnhX4kxmjVe2xgPfCtrRd6GHRtEh9zsL8xVe+pwSzj+OtwvletZZ/wLeKD71L+ZeHHWZ/gowABkp7AwwnEjFAAAAAElFTkSuQmCC);
+    background-position: right top;
+    background-repeat: no-repeat;
+    -moz-box-shadow: none;
+}
+
+.new-media input:required:valid, .new-media textarea:required:valid {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAepJREFUeNrEk79PFEEUx9/uDDd7v/AAQQnEQokmJCRGwc7/QeM/YGVxsZJQYI/EhCChICYmUJigNBSGzobQaI5SaYRw6imne0d2D/bYmZ3dGd+YQKEHYiyc5GUyb3Y+77vfeWNpreFfhvXfAWAAJtbKi7dff1rWK9vPHx3mThP2Iaipk5EzTg8Qmru38H7izmkFHAF4WH1R52654PR0Oamzj2dKxYt/Bbg1OPZuY3d9aU82VGem/5LtnJscLxWzfzRxaWNqWJP0XUadIbSzu5DuvUJpzq7sfYBKsP1GJeLB+PWpt8cCXm4+2+zLXx4guKiLXWA2Nc5ChOuacMEPv20FkT+dIawyenVi5VcAbcigWzXLeNiDRCdwId0LFm5IUMBIBgrp8wOEsFlfeCGm23/zoBZWn9a4C314A1nCoM1OAVccuGyCkPs/P+pIdVIOkG9pIh6YlyqCrwhRKD3GygK9PUBImIQQxRi4b2O+JcCLg8+e8NZiLVEygwCrWpYF0jQJziYU/ho2TUuCPTn8hHcQNuZy1/94sAMOzQHDeqaij7Cd8Dt8CatGhX3iWxgtFW/m29pnUjR7TSQcRCIAVW1FSr6KAVYdi+5Pj8yunviYHq7f72po3Y9dbi7CxzDO1+duzCXH9cEPAQYAhJELY/AqBtwAAAAASUVORK5CYII=);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+
+/*styles for the thumbnails on the homepage */
+#thumbnails a {
+    text-decoration: none;
+    
+}
+
+#thumbnails a:hover {
+    text-decoration: none;
+}
+
+#thumbnails img {
+   // border-radius: 0px;
+    margin: 25px;
+    padding: 10px;
+    width: 390px;
+    height: auto;
+    border-bottom: solid white 2px;
+    border-top: solid white 2px;
+    
+}
+
+#thumbnails img:hover {
+    margin: 25px;
+    padding: 10px;
+    width: 390px;
+    height: auto;
+    border-bottom: solid #7D110C 2px;
+    border-top: solid #7D110C 2px;
+}
+
+#back a {
+    border: none;
+    padding: 8px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: #7D110C;
+    border-radius: 9px;
+    color:#fff;
+    font-size: .80em;
+    text-decoration: none;
+    margin-left: 75px;
+}
+
+#back a:hover {
+    border-color: #7D110C;
+    border: solid 1px;
+    background-color: #eee;
+    color:#7D110C;
+}
+
+#logbar {
+    position:relative;
+    top: 0;
+    right:75px;
+    float: right;
+    z-index: 10000;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 350px;
+    height: 35px;
+    background-color: #333;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color:#FFFFFF;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#logbar ul {
+    list-style-type: none;
+    margin: 0 5px 4px 0;
+    padding: 0 5px;
+    padding: 0;
+    overflow: hidden;
+}
+
+#logbar li {
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+}
+
+#logbar a {
+    display: block;
+    width: 50px;
+   
+}
+/* unvisited link */
+#logbar a:link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* visited link */
+#logbar a:visited {
+    color: #E1D8B7;
+    text-decoration: none;
+}
+
+/* mouse over link */
+#logbar a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
